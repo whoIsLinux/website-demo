@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteamyCup</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!--Navbar-->    
+<header>
+    <nav class="navbar section-content" >
+        <div class="logo"><span class="logo-yellow">☕Steamy</span>Cup</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#Contact">Contact</a></li> 
+            
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1><span class="hero-brand">Best</span>Coffee</h1>
+        <p>Make your day with our special coffee!</p>
+
+<h3 class="description">Welcome to our coffee paradise, 
+    where every bean tells a story and every cup sparks joy.</h3>
+
+        <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">Order Now</a>
+            <a href="https://www.whatsApp.com" class="btn btn-secondary">Contact Us</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="img/pexels-chiecharon-1193335.jpg">
+        </div>
+</section>
+
+<!--Menu Section-->
+  <section id="menu" class="menu">
+    <div class="container">
+        <h2 class="reveal">Our Menu</h2>
+        <p class="section-subtitle"> Discover our carefully crafted coffee slections</p>
+
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All</button>
+             <button class="category-btn active" data-category="hot">Hot Coffee</button>
+         <button class="category-btn active" data-category="iced">Iced Coffee</button>
+          <button class="category-btn active" data-category="speciality">Specialities</button>
+ </div>
+
+ <div class="menu-grid">
+            <!-- Hot Coffee Items -->
+            <div class="menu-card" data-category="hot">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Espresso">
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Espresso</h3>
+                        <span class="price">$3.50</span>
+                    </div>
+                    <p>Strong and bold classic espresso shot</p>
+                    <div class="card-footer">
+                        <span class="rating">⭐ 4.8</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="hot">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Cappuccino">
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Cappuccino</h3>
+                        <span class="price">$4.25</span>
+                    </div>
+                    <p>Perfect balance of espresso, steamed milk, and foam</p>
+                    <div class="card-footer">
+                        <span class="rating">⭐ 4.9</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="hot">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Latte">
+                    <div class="category-tag">Hot</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Latte</h3>
+                        <span class="price">$4.50</span>
+                    </div>
+                    <p>Smooth espresso with steamed milk and light foam</p>
+                    <div class="card-footer">
+                        <span class="rating">⭐ 4.7</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Iced Coffee Items -->
+            <div class="menu-card" data-category="iced">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1477763858572-cda7deaa9bc5?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Iced Americano">
+                    <div class="category-tag">Iced</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Iced Americano</h3>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <p>Chilled espresso with water over ice</p>
+                    <div class="card-footer">
+                        <span class="rating">⭐ 4.6</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="iced">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Cold Brew">
+                    <div class="category-tag">Iced</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Cold Brew</h3>
+                        <span class="price">$4.75</span>
+                    </div>
+                    <p>Slow-steeped for 18 hours for smooth flavor</p>
+                    <div class="card-footer">
+                        <span class="rating">⭐ 4.8</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+<!-- Iced Coffee Card -->
+<div class="menu-card" data-category="iced">
+    <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Iced Latte">
+        <div class="category-tag">Iced</div>
+    </div>
+    <div class="card-content">
+        <div class="card-header">
+            <h3>Iced Latte</h3>
+            <span class="price">$4.75</span>
+        </div>
+        <p>Espresso with chilled milk over ice, perfectly balanced</p>
+        <div class="card-footer">
+            <span class="rating">⭐ 4.7</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<!-- Specialty Cards -->
+<div class="menu-card" data-category="specialty">
+    <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Caramel Macchiato">
+        <div class="category-tag">Special</div>
+    </div>
+    <div class="card-content">
+        <div class="card-header">
+            <h3>Caramel Macchiato</h3>
+            <span class="price">$5.25</span>
+        </div>
+        <p>Vanilla syrup, steamed milk, espresso, and caramel drizzle</p>
+        <div class="card-footer">
+            <span class="rating">⭐ 4.9</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<div class="menu-card" data-category="specialty">
+    <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Mocha">
+        <div class="category-tag">Special</div>
+    </div>
+    <div class="card-content">
+        <div class="card-header">
+            <h3>Mocha</h3>
+            <span class="price">$5.00</span>
+        </div>
+        <p>Rich chocolate, espresso, and steamed milk combination</p>
+        <div class="card-footer">
+            <span class="rating">⭐ 4.8</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<div class="menu-card" data-category="specialty">
+    <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Hazelnut Latte">
+        <div class="category-tag">Special</div>
+    </div>
+    <div class="card-content">
+        <div class="card-header">
+            <h3>Hazelnut Latte</h3>
+            <span class="price">$5.50</span>
+        </div>
+        <p>Sweet hazelnut syrup with espresso and steamed milk</p>
+        <div class="card-footer">
+            <span class="rating">⭐ 4.6</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const menuCards = document.querySelectorAll('.menu-card');
+
+    categoryBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            categoryBtns.forEach(b => b.classList.remove('active'));
+            
+            // Add active class to clicked button
+            btn.classList.add('active');
+            
+            const category = btn.getAttribute('data-category');
+            
+           
+            });
+        });
+    });
+
+
+
+
+
+
+
+</script>
+  </section>
+
+
+  <!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our <span class="text-yellow">Story</span></h2>
+                <p class="intro">Brewing passion since 2010</p>
+                
+                <div class="story">
+                    <p>SteamyCup began as a small dream in a cozy corner of the city. What started as a humble coffee cart has grown into a community hub where coffee lovers gather to share stories, ideas, and perfect brews.</p>
+                    
+                    <p>Our founder, Maria, spent years traveling through coffee regions around the world, learning from farmers and roasters. She brought back not just beans, but a philosophy: every cup should tell a story and create connection.</p>
+                    
+                    <p>Today, we continue that tradition by sourcing ethical beans, roasting in small batches, and training our baristas in the art of perfect preparation.</p>
+                </div>
+
+                <div class="features">
+                    <div class="feature">
+                        <span class="feature-icon">🌱</span>
+                        <h4>Ethically Sourced</h4>
+                        <p>Direct trade with sustainable farms</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🔥</span>
+                        <h4>Freshly Roasted</h4>
+                        <p>Small-batch roasted daily</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">👨‍🍳</span>
+                        <h4>Expert Baristas</h4>
+                        <p>Certified coffee professionals</p>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn btn-primary">Visit Us</a>
+            </div>
+
+            <div class="about-images">
+                <div class="image-main">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=700&q=80" alt="Coffee shop interior">
+                </div>
+                <div class="image-secondary">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Barista making coffee">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=300&q=80" alt="Coffee beans">
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    // Add to JavaScript for scroll animation
+const aboutSection = document.querySelector('.about-content');
+window.addEventListener('scroll', () => {
+    if (aboutSection.getBoundingClientRect().top < window.innerHeight * 0.8) {
+        aboutSection.classList.add('visible');
+    }
+});
+</script>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <div class="container">
+        <h2>Our <span class="text-yellow">Gallery</span></h2>
+        <p class="section-subtitle">A glimpse into the SteamyCup experience</p>
+
+        <div class="gallery-grid">
+            <!-- Coffee Products -->
+            <div class="gallery-item" data-category="coffee">
+                <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Artistic coffee" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>Signature Brews</h4>
+                        <p>Our handcrafted coffee creations</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="coffee">
+                <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Cappuccino art" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>Latte Art</h4>
+                        <p>Beautiful designs in every cup</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coffee Shop Atmosphere -->
+            <div class="gallery-item" data-category="atmosphere">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Coffee shop interior" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>Cozy Atmosphere</h4>
+                        <p>Our welcoming space</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="atmosphere">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Coffee beans" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>Fresh Beans</h4>
+                        <p>Premium quality selection</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- People & Moments -->
+            <div class="gallery-item" data-category="people">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Barista working" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>Expert Baristas</h4>
+                        <p>Passionate about perfection</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="people">
+                <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Customers enjoying" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>Happy Moments</h4>
+                        <p>Creating memories together</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More items to fill the grid -->
+            <div class="gallery-item" data-category="coffee">
+                <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Specialty coffee" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>Specialty Drinks</h4>
+                        <p>Unique creations</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="atmosphere">
+                <img src="https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Coffee shop exterior" loading="lazy">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h4>Welcome Home</h4>
+                        <p>Our beautiful location</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Filters -->
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="coffee">Coffee</button>
+            <button class="filter-btn" data-filter="atmosphere">Atmosphere</button>
+            <button class="filter-btn" data-filter="people">People</button>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <img src="" alt="guvo" class="lightbox-img">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    
+       <script>
+// Gallery filtering and lightbox
+document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.querySelector('.lightbox-img');
+    const lightboxCaption = document.querySelector('.lightbox-caption');
+    const closeBtn = document.querySelector('.close');
+
+    // Filter functionality
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const filter = btn.getAttribute('data-filter');
+            
+            galleryItems.forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Lightbox functionality
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const img = item.querySelector('img');
+            const title = item.querySelector('h4').textContent;
+            const description = item.querySelector('p').textContent;
+            
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightboxCaption.textContent = `${title} - ${description}`;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Close lightbox
+    closeBtn.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+
+    // Close lightbox on outside click
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    // Close with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
+</script>
+  
+</section>
+
+
+<section id="testimonials" class="testimonials">
+    <div class="container">
+       <h2>What our Customers say</h2>
+       <p class="section-subtitle">Real Coffee from special lovers</p>
+
+       <div class="testimonials-container">
+        <!--Testimonial 1-->
+        <div class="testimonial-card">
+         <div class="rating">⭐⭐⭐⭐⭐</div>
+<p class="testimonial-text">The best coffee I've ever had! The caramel macchiato is absolutely divine. Perfect balance of sweetness and coffee flavor!</p>
+<div class="customer">
+     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80" alt="Customer" class="customer-img">
+     <div class="customer-info">
+            <h4>Michael Chen</h4>
+             <p>Regular Customer</p>
+            </div>
+    </div>     
+</div>
+
+<!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">SteamyCup became my second home. The atmosphere is cozy, the staff is friendly, and the cold brew is incredibly smooth!</p>
+                <div class="customer">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80" alt="Customer" class="customer-img">
+                    <div class="customer-info">
+                        <h4>Sarah Johnson</h4>
+                        <p>Coffee Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+
+
+       <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">I'm a barista myself, and I can say their espresso is perfection. Consistent quality every single time. Highly recommend!</p>
+                <div class="customer">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80" alt="Customer" class="customer-img">
+                    <div class="customer-info">
+                        <h4>David Martinez</h4>
+                        <p>Professional Barista</p>
+                    </div>
+                </div>
+            </div>     
+             </div> 
+
+<!-- Navigation Dots -->
+        <div class="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const dots = document.querySelectorAll('.dot');
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    // Initially show all testimonials (not a carousel)
+    // If you want a carousel effect, you'll need to modify this
+    
+    // Add click functionality to dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            // Remove active class from all dots
+            dots.forEach(d => d.classList.remove('active'));
+            // Add active class to clicked dot
+            dot.classList.add('active');
+            
+            // If you want carousel functionality, you would add code here
+            // to show the corresponding testimonial and hide others
+        });
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dots = document.querySelectorAll('.dot');
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    // Function to show a specific testimonial
+    function showTestimonial(index) {
+        // Hide all testimonials
+        testimonialCards.forEach(card => {
+            card.style.display = 'none';
+        });
+        
+        // Show the selected testimonial
+        testimonialCards[index].style.display = 'block';
+        
+        // Update active dot
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+    }
+    
+    // Add click functionality to dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showTestimonial(index);
+        });
+    });
+    
+    // Show first testimonial by default
+    showTestimonial(0);
+    
+    // Optional: Auto-rotate testimonials
+    let currentIndex = 0;
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % testimonialCards.length;
+        showTestimonial(currentIndex);
+    }, 5000); // Change every 5 seconds
+});
+
+</script>
+
+
+ <!-- Google Reviews Button -->
+        <div class="reviews-cta">
+            <p>Love our coffee? Share your experience!</p>
+            <a href="#" class="btn btn-primary">Write a Review</a>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="contact-section" id="contact">
+    <div class="section-header">
+        <h2>Get in <span class="text-yellow">Touch</span></h2>
+        <p class="section-subtitle">We'd love to hear from you. Visit us, call, or send a message.</p>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Our Location</h3>
+                    <p>123 Coffee Lane, NII District<br>Seattle, AC 211374</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday: 7am - 8pm<br>Saturday - Sunday: 8am - 9pm</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Phone</h3>
+                    <p>(+233) 020 754 7145</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                    <h3>Email</h3>
+                    <p>hello@steamycup.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15881.903189484554!2d-0.17086542573525887!3d5.644081039656221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b53248ad221%3A0xae2c776508a9cbf8!2sD%20Cafe%20(East%20Legon)!5e0!3m2!1sen!2sgh!4v1756068650525!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+    </div>
+</section>
+
+
+<script>
+// Smooth scrolling for navigation links
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all navigation links with hashes
+    const navLinks = document.querySelectorAll('a[href^="#"]');
+    
+    // Add click event to each link
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Get the target element
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (!targetElement) return;
+            
+            // Calculate position to scroll to
+            const targetPosition = targetElement.offsetTop - 80; // Adjust for header height
+            
+            // Smooth scroll
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+            
+            // Update URL (optional)
+            history.pushState(null, null, targetId);
+        });
+    });
+});
+
+// Reveal elements on scroll
+function initScrollReveal() {
+    const revealElements = document.querySelectorAll('.reveal');
+    
+    function checkReveal() {
+        const windowHeight = window.innerHeight;
+        const revealPoint = 150;
+        
+        revealElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            
+            if (elementTop < windowHeight - revealPoint) {
+                element.classList.add('active');
+            }
+        });
+    }
+    
+    // Check on load and scroll
+    window.addEventListener('load', checkReveal);
+    window.addEventListener('scroll', checkReveal);
+}
+
+// Initialize when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    initScrollReveal();
+});
+
+// Optional: Back to top button
+function initBackToTop() {
+    const backToTopBtn = document.createElement('button');
+    backToTopBtn.innerHTML = '↑';
+    backToTopBtn.id = 'backToTop';
+    backToTopBtn.style.display = 'none';
+    document.body.appendChild(backToTopBtn);
+    
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.style.display = 'block';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+}
+
+// Initialize back to top button
+initBackToTop();
+</script>
+
+ <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>☕ SteamyCup</h3>
+                <p>We craft the perfect coffee experience with passion and love. Visit us for a memorable coffee journey.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-hours">
+                <h4 class="footer-heading">Opening Hours</h4>
+                <ul class="hours-list">
+                    <li>Monday - Friday <span>7:00 AM - 8:00 PM</span></li>
+                    <li>Saturday <span>8:00 AM - 9:00 PM</span></li>
+                    <li>Sunday <span>8:00 AM - 6:00 PM</span></li>
+                    <li>Holidays <span>9:00 AM - 5:00 PM</span></li>
+                </ul>
+            </div>
+            
+            <div class="newsletter">
+                <h4 class="footer-heading">Newsletter</h4>
+                <p>Subscribe to our newsletter for updates, promotions, and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2025 SteamyCup Coffee Shop. All rights reserved.</p>
+            </div>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
